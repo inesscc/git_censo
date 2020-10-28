@@ -1,0 +1,349 @@
+---
+title: ""
+subtitle: ""  
+author: 
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#![](imagenes/logo_portada2.PNG)
+
+---
+
+
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+
+
+<img src="imagenes/logo_portada2.png" width="200" />
+
+
+## Acompañamiento EPF en el uso de Git
+
+## Proyecto Estratégico Servicios Compartidos para la Producción Estadística
+
+## Introducción a Git
+
+### Noviembre 2020
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message = FALSE) 
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+#style_duo_accent(
+ # primary_color = "#1381B0",
+  #secondary_color = "#FF961C",
+  #inverse_header_color = "#FFFFFF"
+#)
+```
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos de hoy
+
+--
+
+- Principales conceptos sobre Git
+
+--
+
+- Sesión de práctica 
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Créditos
+
+Parte del material de la clase fue obtenido de una presentación de [Camila Molina](github.com/CamilaMolina) y Gabriela Sandoval
+
+--
+
+Ciclo de charlas [*Happy Git with R*](https://github.com/rladieschile) realizado por RLadies Chile
+
+.center[
+<img src="imagenes/club-de-lectura.png" width="600" />
+]
+
+
+.center[
+<img src="imagenes/rladies.PNG" width="100" />
+]
+
+
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# ¿Qué es Git y para qué sirve?
+
+Es un sistema de control de versiones (VCS)
+
+Permite que varias personas trabajen en un mismo proyecto sin molestarse unos a otros
+
+Funciona como una máquina del tiempo 
+
+- En git nada desaparece
+
+- Siempre es posible volver a un estado anterior
+
+- Nos protege de nuestra propia estupidez
+
+- Nos protege de fallas en el disco duro
+
+.pull-left[
+<img src="imagenes/git.png" width="180" />
+]
+
+.pull-right[
+<img src="imagenes/gitlab.png" width="200" />
+]
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Principales conceptos
+
+Git nos permite navegar de manera "sencilla" por las distintas versiones de un archivo
+
+.center[
+<img src="imagenes/diagrama.png" width="300" />
+]
+
+--
+
+### Podemos rastrear dónde y cuándo se producen los errores
+
+.center[
+<img src="imagenes/pikachu.png" width="250" />
+]
+
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Estados en Git
+
+.center[
+<img src="imagenes/estados-git.png" width="500" />
+]
+
+Tenemos 3 estados para nuestros archivos:
+
+- Modificado
+
+- "En escena" (*staging area*)
+
+- Confirmado o comprometido (*committed*)
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Principales conceptos
+
+Ciclos sucesivos de *modificar, poner en escena y confirmar* van generando el historial de cambios de nuestro repositorio
+
+--
+
+Git almacena cada una de las confirmaciones que vamos haciendo
+
+--
+
+Si quiero trabajar de manera individual, no necesito más que lo que hemos visto hasta ahora
+
+--
+
+**¿Qué pasa si necesito trabajar con más personas?**
+
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Principales conceptos
+
+.center[
+<img src="imagenes/diagrama-git.png" width="600" />
+]
+
+--
+
+### Git puede funcionar sin problemas de manera local
+
+--
+
+### Gitlab se usa para trabajar con más personas
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Repositorio remoto
+
+.center[
+<img src="imagenes/diagrama-colaborativo.png" width="600" />
+]
+
+--
+
+### Varias personas aportan a un mismo repositorio
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Esquema de trabajo en Git
+
+
+.center[
+<img src="https://i.gifer.com/2DAN.gif" width="450" />
+]
+
+
+
+Los commit nos permiten sujetarnos a la roca 
+
+--
+
+En terreno peligro, es mejor hacer más commits.  
+
+--
+
+Si nos caemos, tendremos un punto del cual sujetarnos
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Esquema de trabajo en Git
+
+Cuando tengamos seguridad de que nuestro código funciona, podemos empujar los cambios (*push*)
+
+--
+
+En Git gana el que empuja primero
+
+--
+
+- Si alguien empuja y altera un archivo en el que estás trabajando localmente, habrán problemas cuando quieras empujar.
+
+--
+
+- Si has trabajado localmente y alguien hizo *push*, tendrás problemas al hacer *pull*. 
+
+--
+
+**Existen 2 casos felices**:
+
+- Cuando los cambios refieren a archivos diferentes
+
+
+--
+
+- Cuando alguien modificó un archivo tuyo, pero no se superpone con tú trabajo (agregar una línea)
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización del equipo
+
+Estamos en un periodo de aprendizaje
+
+--
+
+Para facilitar las cosas, trabajaremos todos en una misma rama
+
+--
+
+.red[WARNING] Esto no es lo correcto, pero lo haremos así por simplicidad .red[WARNING] 
+
+--
+
+El trabajo de la EPF, en general, no requiere que muchas personas estén interviniendo un mismo archivo 
+
+--
+
+.red[Es muy importante tener cuidado con el trabajo de los compañeros] 
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización del equipo
+
+.center[
+<img src="imagenes/estructura-scripts.png" width="650" />
+]
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Material de consulta
+
+[Guía muy completa en español](https://git-scm.com/book/es/v2)
+
+[Git con enfoque en R](https://happygitwithr.com/)
+
+
+---
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+<img src="imagenes/logo_portada2.png" width="200" />
+
+## Acompañamiento EPF en el uso de Git
+
+## Proyecto Estratégico Servicios Compartidos para la Producción Estadística
+
+## Introducción a Git
+
+### Noviembre 2020
