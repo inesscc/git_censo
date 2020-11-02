@@ -68,6 +68,70 @@ background-position: 100% 0%
 
 
 ---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# PE Servicios Compartidos
+
+--
+
+![](imagenes/estructura_sscc1.PNG)
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# PE SSCC: fases involucradas
+
+--
+
+![](imagenes/estructura_sscc2.PNG)
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Marco de colaboración SdES - SSCC
+
+--
+
+**Qué ofrecemos:**
+
+--
+
+- Capacitación en git.
+
+--
+
+- Asistencia técnica durante la piloto.
+
+--
+
+- Tutoriar primeros commiteos (para eso debemos conciliar un calendario).
+
+--
+
+**Qué pedimos:**
+
+--
+
+- Compromiso del equipo de participar en la actividad.
+
+--
+
+- Respetar periodicidad definida para realizar las actualizaciones en el repositorio.
+
+--
+
+- Colaborar en la documentación de la experiencia (entrevistas, focus, pautas, etc.).
+
+---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
