@@ -113,7 +113,7 @@ background-position: 100% 0%
 
 --
 
-- Tutoriar primeros commiteos (para eso debemos conciliar un calendario).
+- Tutoriar primeros commits (para eso debemos conciliar un calendario).
 
 --
 
