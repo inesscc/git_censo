@@ -390,6 +390,186 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
+# Trabajando con ramas
+
+La forma más segura de trabajar con git es a través de ramas (*branches*)
+
+--
+
+Cada desarrollador puede trabajar en una rama independiente, sin molestar a los demás
+
+--
+
+Los desarrolladores no tienen permiso para empujar a la rama master
+
+--
+
+Existe un administrador encargado de unir (*merge*) las contribuciones a la rama central
+
+- Decide si el aporte debe incorporarse 
+
+- Resuelve conflictos
+
+
+--
+
+### Veamos un ejemplo 
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+Tenemos una rama con 3 *commits*
+
+.center[
+<img src="imagenes/basic-branching-1.png" width="500" />
+]
+
+--
+
+Quiero mejorar una parte del código, sin afectar lo que ya está hecho
+
+Creo una rama llamada iss53 (por *issue*) y me muevo hacia allá
+
+--
+
+.pull-left[
+
+<br>
+<br>
+**Las dos ramas apuntan al mismo historial de commits**
+]
+
+.pull-right[
+<img src="imagenes/basic-branching-2.png" width="500" />
+]
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+Avanzo en mi mejora y hago *commit*
+
+.center[
+<img src="imagenes/basic-branching-3.png" width="500" />
+]
+
+--
+
+Mi nueva rama quedó un *commit* más adelantada que la master
+
+--
+
+De pronto, me dicen que hay que apagar un incendio en otra parte del proceso
+
+--
+
+Creo una nueva rama llamada hotfix y me muevo hacia allá
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+Apago el incendio y hago *commit*
+
+.center[
+<img src="imagenes/basic-branching-4.png" width="500" />
+]
+
+--
+
+Mi rama hotfix también quedó adelantada un *commit* a la rama master
+
+--
+
+Ahora quiero volver a mi trabajo inicial, pero antes debo integrar el trabajo de hotfix a la rama master
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+Me muevo a la rama master y hago *merge* 
+
+.center[
+<img src="imagenes/basic-branching-5.png" width="500" />
+]
+
+--
+
+En este caso, el merge se llama *fast-forward*
+
+--
+
+Lo único que hizo git fue mover el puntero hacia adelante
+
+--
+
+Dado que tengo dos ramas apuntando al mismo historial, puedo borrar hotfix
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+
+Ahora quiero volver a mi trabajo inicial
+
+--
+
+Los cambios realizados en iss53 no están contenidos en la rama master
+
+.center[
+<img src="imagenes/basic-branching-5.png" width="500" />
+]
+
+--
+
+Una vez que termine, debo incorporar mis mejoras a la rama master
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Ejemplo extraído de git-scm
+
+La estrategia de unión en este caso es recursiva 
+
+.center[
+<img src="imagenes/basic-merging-1.png" width="500" />
+]
+
+--
+
+.center[
+<img src="imagenes/basic-merging-2.png" width="500" />
+]
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
 # Material de consulta
 
 [Guía muy completa en español](https://git-scm.com/book/es/v2)
