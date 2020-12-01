@@ -416,6 +416,20 @@ Existe un administrador encargado de unir (*merge*) las contribuciones a la rama
 ### Veamos un ejemplo 
 
 ---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Trabajando con ramas
+
+
+.center[
+<img src="imagenes/arbol3.jpg" width="550" />
+]
+
+
+
+---
 
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
