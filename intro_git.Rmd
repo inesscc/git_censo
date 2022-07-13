@@ -1,20 +1,20 @@
 ---
-title: ""
-subtitle: ""  
+title: "Capacitación paquete calidad"
+subtitle: "calidad"
 author: 
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
     seal: false
-    lib_dir: libs
+    #lib_dir: libs
     css: xaringan-themer.css
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
-#![](imagenes/logo_portada2.PNG)
-
+      countIncrementalSlides: False
+      ratio: '13:9'
 ---
+
 
 
 class: center, middle
@@ -26,13 +26,11 @@ class: center, middle
 <img src="imagenes/logo_portada2.png" width="200" />
 
 
-## Acompañamiento EPF en el uso de Git
+## Capacitación en R intermedio
 
 ## Proyecto Estratégico Servicios Compartidos para la Producción Estadística
 
-## Introducción a Git
-
-### Noviembre 2020
+### Agosto 2022
 
 
 ```{r setup, include=FALSE}
@@ -51,110 +49,33 @@ library(xaringanthemer)
 
 
 ---
-
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos de hoy
+# Contenidos de la clase
+
+- ¿Qué es git y para qué sirve?
 
 --
 
-- Principales conceptos sobre Git
+- Principales conceptos asociados a Git
 
 --
 
-- Sesión de práctica 
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# PE Servicios Compartidos
+- Demostración de cómo funciona un repositorio colaborativo
 
 --
 
-![](imagenes/estructura_sscc1.PNG)
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# PE SSCC: fases involucradas
+- Clonaremos un repositorio
 
 --
 
-![](imagenes/estructura_sscc2.PNG)
+**MUY IMPORTANTE**: 
 
+- Deben trabajar desde sus computadores personales
 
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Marco de colaboración SdES - SSCC
-
---
-
-**Qué ofrecemos:**
-
---
-
-- Capacitación en git.
-
---
-
-- Asistencia técnica durante la piloto.
-
---
-
-- Tutoriar primeros commits (para eso debemos conciliar un calendario).
-
---
-
-**Qué pedimos:**
-
---
-
-- Compromiso del equipo de participar en la actividad.
-
---
-
-- Respetar periodicidad definida para realizar las actualizaciones en el repositorio.
-
---
-
-- Colaborar en la documentación de la experiencia (entrevistas, focus, pautas, etc.).
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Créditos
-
-Parte del material de la clase fue obtenido de una presentación de [Camila Molina](github.com/CamilaMolina) y Gabriela Sandoval
-
---
-
-Ciclo de charlas [*Happy Git with R*](https://github.com/rladieschile) realizado por RLadies Chile
-
-.center[
-<img src="imagenes/club-de-lectura.png" width="600" />
-]
-
-
-.center[
-<img src="imagenes/rladies.PNG" width="100" />
-]
-
-
-
+- Deben crear una cuenta en *github*
 
 ---
 
@@ -346,43 +267,6 @@ En Git gana el que empuja primero
 
 - Cuando alguien modificó un archivo tuyo, pero no se superpone con tú trabajo (agregar una línea)
 
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Organización del equipo
-
-Estamos en un periodo de aprendizaje
-
---
-
-Para facilitar las cosas, trabajaremos todos en una misma rama
-
---
-
-.red[WARNING] Esto no es lo correcto, pero lo haremos así por simplicidad .red[WARNING] 
-
---
-
-El trabajo de la EPF, en general, no requiere que muchas personas estén interviniendo un mismo archivo 
-
---
-
-.red[Es muy importante tener cuidado con el trabajo de los compañeros] 
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Organización del equipo
-
-.center[
-<img src="imagenes/estructura-scripts.png" width="650" />
-]
 
 
 ---
@@ -598,10 +482,9 @@ class: center, middle
 .linea-inferior[]
 <img src="imagenes/logo_portada2.png" width="200" />
 
-## Acompañamiento EPF en el uso de Git
+
+## Capacitación en R intermedio
 
 ## Proyecto Estratégico Servicios Compartidos para la Producción Estadística
 
-## Introducción a Git
-
-### Noviembre 2020
+### Agosto 2022
