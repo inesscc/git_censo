@@ -733,7 +733,7 @@ https://github.com/clases-r-intermedio/0_intro_git.git
 
 - Clonen el repositorio que usamos para hacer la demostración
 
-https://gitlab.com/inesscc/demostracion_git.git
+https://gitlab.com/inesscc/demostracion_git_censo.git
 
 - Creen una rama que tenga por nombre la primera letra de su nombre y la primera letra de su apellido. Ejemplo: Ignacio Agloni debe crear la rama "ia"
 
