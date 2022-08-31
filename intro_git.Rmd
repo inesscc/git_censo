@@ -30,7 +30,7 @@ class: center, middle
 
 ## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
 
-### Agosto 2022
+### Septiembre 2022
 
 
 ```{r setup, include=FALSE}
@@ -691,6 +691,32 @@ La estrategia de unión en este caso es recursiva
 
 
 ---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Torpedo
+
+**git add + .**: poner todo en escena
+
+**git commit -m "mensaje personalizado"**: confirmar cambios
+
+**git push rama**: empujar a rama remota
+
+**git clone url_repositorio**: clonar un repositorio
+
+**git pull nombre_rama**: traer cosas del repositorio
+
+**git checkout nombre_rama**: ir a una rama
+
+**git branch**: ver todas las ramas
+
+**git branch nombre_rama**: crear una rama
+
+
+
+---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
@@ -740,5 +766,5 @@ class: center, middle
 
 ## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
 
-### Agosto 2022
+### Septiembre 2022
 
